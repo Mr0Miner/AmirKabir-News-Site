@@ -55,23 +55,6 @@ nav ul li a:hover {
     color: #ffcc00;
 }
 
-.hero {
-    background-color: #f9f9f9;
-    padding: 50px 20px;
-    text-align: center;
-}
-
-.hero h2 {
-    font-size: 2.5em;
-    margin-bottom: 10px;
-    color: #004080;
-}
-
-.hero p {
-    font-size: 1.2em;
-    color: #555;
-}
-
 .news-section {
     display: flex;
     justify-content: space-between;
@@ -85,6 +68,7 @@ nav ul li a:hover {
     border-radius: 8px;
     width: 30%;
     transition: transform 0.3s ease;
+    margin: 10px;
 }
 
 .news-item:hover {

@@ -24,10 +24,15 @@ header .logo h1 {
     margin: 0;
 }
 
+header .logo img {
+    max-width: 450px;
+    width: 100%;
+}
+
 nav ul {
     list-style: none;
     padding: 0;
-    margin: 0;
+    margin: 20px 0;
     display: flex;
     justify-content: center;
     gap: 20px;
