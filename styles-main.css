@@ -25,11 +25,7 @@ header {
 header .logo h1 {
     font-size: 2.5em;
     margin: 0;
-}
-
-header .logo img {
-    max-width: 450px;
-    width: 100%;
+    font-family: IranNastaliq;
 }
 
 nav ul {
@@ -108,8 +104,7 @@ footer {
     color: white;
     text-align: center;
     padding: 15px;
-    margin: 0 auto;
-    margin-top: 30px;
+    margin: 30px auto 0; /* Combined margin for clarity */
     font-size: 0.9em;
     position: relative;
     max-width: 1200px;

@@ -22,6 +22,7 @@ header {
 header .logo h1 {
     font-size: 2.5em;
     margin: 0;
+    font-family: IranNastaliq;
 }
 
 header .logo img {
@@ -78,16 +79,14 @@ nav ul li a:hover {
     font-size: 0.9em;
     color: #888;
     margin-bottom: 10px;
-    display: inline;
+    display: inline-block; /* Changed to inline-block for better layout */
     text-align: left;
-    float: left;
 }
 
 .main-content .news-title {
     font-size: 2em;
     color: #004080;
     margin-bottom: 15px;
-    display: inline;
 }
 
 .main-content p {
@@ -109,7 +108,7 @@ a:hover {
 
 .sidebar {
     width: 25%;
-    background-color: white;
+    background-color: #fefefe; /* Light background for better contrast */
     padding: 20px;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
@@ -119,7 +118,10 @@ a:hover {
 .sidebar h3 {
     color: #004080;
     font-size: 1.5em;
-    margin-bottom: 20px;
+    margin-bottom: 0; /* Remove bottom margin for better alignment */
+    border-bottom: none; /* Remove underline for the title */
+    padding-bottom: 0; /* Remove padding for better alignment */
+    margin-right: 10px; /* Space between title and image */
 }
 
 .sidebar ul {
@@ -129,6 +131,8 @@ a:hover {
 
 .sidebar ul li {
     margin-bottom: 10px;
+    display: flex; /* Use flexbox for alignment */
+    align-items: center; /* Center items vertically */
 }
 
 .sidebar ul li a {
@@ -140,6 +144,18 @@ a:hover {
 
 .sidebar ul li a:hover {
     color: #ffcc00;
+}
+
+.sidebar img {
+    max-width: 50px; /* Adjusted width for better alignment */
+    width: 100%; /* Make the image responsive */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 8px; /* Rounded corners for a softer look */
+    transition: transform 0.3s ease; /* Smooth scaling effect on hover */
+}
+
+.sidebar img:hover {
+    transform: scale(3); /* Slightly enlarge the image on hover */
 }
 
 footer {
