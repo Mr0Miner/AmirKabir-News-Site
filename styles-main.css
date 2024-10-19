@@ -168,6 +168,7 @@ footer {
         box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
         border-bottom: 3px solid #ffcc00;
         width: 100%;
+        margin-top: 0;
     }
 
     footer {
@@ -186,7 +187,7 @@ footer {
     }
 
     .container {
-        padding: 10px; /* Reduced padding for smaller screens */
+        padding: 0;
     }
 }
 
