@@ -28,7 +28,6 @@ header .logo h1 {
     font-size: 2.7em;
     margin: 0;
     font-family: IranNastaliq, serif;
-    letter-spacing: 2px;
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
 }
 
@@ -55,13 +54,6 @@ nav ul li a:hover {
     background-color: #ffcc00;
     color: #00264d;
     transform: scale(1.1);
-}
-
-@media (max-width: 768px) {
-    nav ul {
-        flex-direction: column;
-        gap: 10px;
-    }
 }
 
 .news-section {
@@ -126,16 +118,19 @@ nav ul li a:hover {
 }
 
 footer {
-    background-color: #004080;
+    background-color: #00264d; /* Changed to match header */
     color: white;
+    padding: 20px; /* Increased padding to match header */
     text-align: center;
-    padding: 15px;
     margin: 30px auto 0;
     font-size: 0.9em;
     position: relative;
     max-width: 1200px;
     width: 100%;
     border-radius: 20px 20px 0 0;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Added box shadow to match header */
+    border-top: 3px solid #ffcc00; /* Added top border to match header */
+    font-family: 'Vazir', sans-serif;
 }
 
 @media (max-width: 768px) {
@@ -148,13 +143,71 @@ footer {
     .news-section {
         display: flex;
         flex-direction: column;
-        align-items: stretch;
+        align-items: center; /* Center items horizontally */
     }
 
     .news-item {
-        width: 100%;
+        width: 80%;
         margin-bottom: 20px;
         box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
         border-radius: 8px;
+        display: flex; /* Added to enable centering of content */
+        flex-direction: column; /* Ensures content is stacked vertically */
+    }
+
+    header .logo h1 {
+        font-size: 2em; /* Adjusted font size for smaller screens */
+    }
+
+    header {
+        background-color: #00264d;
+        color: white;
+        padding: 20px;
+        text-align: center;
+        border-radius: 0 0 20px 20px;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+        border-bottom: 3px solid #ffcc00;
+        width: 100%;
+    }
+
+    footer {
+        background-color: #00264d; /* Changed to match header */
+        color: white;
+        padding: 20px; /* Increased padding to match header */
+        text-align: center;
+        margin: 30px auto 0;
+        font-size: 0.9em;
+        position: relative;
+        max-width: 1200px;
+        width: 100%;
+        border-radius: 20px 20px 0 0;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Added box shadow to match header */
+        border-top: 3px solid #ffcc00; /* Added top border to match header */
+    }
+
+    .container {
+        padding: 10px; /* Reduced padding for smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    header .logo h1 {
+        font-size: 1.8em; /* Further reduced font size for very small screens */
+    }
+
+    nav ul {
+        gap: 15px; /* Reduced gap for smaller screens */
+    }
+
+    .news-item h3 {
+        font-size: 1.3em; /* Adjusted heading size for smaller screens */
+    }
+
+    .news-item p {
+        font-size: 0.9em; /* Adjusted paragraph size for smaller screens */
+    }
+
+    footer {
+        font-size: 0.7em; /* Further reduced footer font size */
     }
 }
