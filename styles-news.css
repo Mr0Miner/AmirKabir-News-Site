@@ -155,7 +155,8 @@ a:hover {
 }
 
 .sidebar img:hover {
-    transform: scale(3); /* Slightly enlarge the image on hover */
+    transform: scale(5); /* Slightly enlarge the image on hover */
+    border-radius: 6px;
 }
 
 footer {

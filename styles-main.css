@@ -15,40 +15,53 @@ body {
 }
 
 header {
-    background-color: #004080;
+    background-color: #00264d;
     color: white;
     padding: 20px;
     text-align: center;
     border-radius: 0 0 20px 20px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    border-bottom: 3px solid #ffcc00;
 }
 
 header .logo h1 {
-    font-size: 2.5em;
+    font-size: 2.7em;
     margin: 0;
-    font-family: IranNastaliq;
+    font-family: IranNastaliq, serif;
+    letter-spacing: 2px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
 }
 
 nav ul {
     list-style: none;
     padding: 0;
-    margin: 20px 0;
+    margin: 0;
     display: flex;
     justify-content: center;
-    gap: 20px;
-}
-
-nav ul li {
-    display: inline;
+    gap: 30px;
 }
 
 nav ul li a {
+    font-family: 'Vazir', sans-serif;
     color: white;
     text-decoration: none;
     font-weight: bold;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
 }
 
 nav ul li a:hover {
-    color: #ffcc00;
+    background-color: #ffcc00;
+    color: #00264d;
+    transform: scale(1.1);
+}
+
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
 }
 
 .news-section {
@@ -75,7 +88,13 @@ nav ul li a:hover {
     width: 100%;
     height: auto;
     border-radius: 8px;
-    margin-bottom: 10px;
+    transition: transform 0.5s ease, filter 0.5s ease;
+    filter: blur(1.5px);
+}
+
+.news-item img:hover {
+    transform: scale(1.05);
+    filter: blur(0);
 }
 
 .news-item h3 {
@@ -99,15 +118,43 @@ nav ul li a:hover {
     color: #ffcc00;
 }
 
+.about-section img {
+    max-width: 100px;
+    width: 100%;
+    border-radius: 10px;
+    display: block;
+}
+
 footer {
     background-color: #004080;
     color: white;
     text-align: center;
     padding: 15px;
-    margin: 30px auto 0; /* Combined margin for clarity */
+    margin: 30px auto 0;
     font-size: 0.9em;
     position: relative;
     max-width: 1200px;
     width: 100%;
     border-radius: 20px 20px 0 0;
+}
+
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+    
+    .news-section {
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .news-item {
+        width: 100%;
+        margin-bottom: 20px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        border-radius: 8px;
+    }
 }
