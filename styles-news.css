@@ -79,7 +79,7 @@ nav ul li a:hover {
     font-size: 0.9em;
     color: #888;
     margin-bottom: 10px;
-    display: inline-block; /* Changed to inline-block for better layout */
+    display: inline-block;
     text-align: left;
 }
 
@@ -108,7 +108,7 @@ a:hover {
 
 .sidebar {
     width: 25%;
-    background-color: #fefefe; /* Light background for better contrast */
+    background-color: #fefefe;
     padding: 20px;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
@@ -118,10 +118,10 @@ a:hover {
 .sidebar h3 {
     color: #004080;
     font-size: 1.5em;
-    margin-bottom: 0; /* Remove bottom margin for better alignment */
-    border-bottom: none; /* Remove underline for the title */
-    padding-bottom: 0; /* Remove padding for better alignment */
-    margin-right: 10px; /* Space between title and image */
+    margin-bottom: 0;
+    border-bottom: none;
+    padding-bottom: 0;
+    margin-right: 10px;
 }
 
 .sidebar ul {
@@ -131,8 +131,7 @@ a:hover {
 
 .sidebar ul li {
     margin-bottom: 10px;
-    display: flex; /* Use flexbox for alignment */
-    align-items: center; /* Center items vertically */
+    align-items: center;
 }
 
 .sidebar ul li a {
@@ -140,6 +139,9 @@ a:hover {
     color: #004080;
     font-weight: bold;
     transition: color 0.3s ease;
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
 }
 
 .sidebar ul li a:hover {
@@ -147,15 +149,16 @@ a:hover {
 }
 
 .sidebar img {
-    max-width: 50px; /* Adjusted width for better alignment */
-    width: 100%; /* Make the image responsive */
-    height: auto; /* Maintain aspect ratio */
-    border-radius: 8px; /* Rounded corners for a softer look */
-    transition: transform 0.3s ease; /* Smooth scaling effect on hover */
+    max-width: 50px;
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+    margin-left: 5px;
 }
 
 .sidebar img:hover {
-    transform: scale(5); /* Slightly enlarge the image on hover */
+    transform: scale(5);
     border-radius: 6px;
 }
 
@@ -172,13 +175,13 @@ footer {
     max-width: 100%;
     margin: 20px 0;
     text-align: center;
-    background-color: #f9f9f9; /* Added a light background for contrast */
-    border-radius: 10px; /* Reduced border-radius for a subtler effect */
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Added shadow for depth */
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
 .video-container video {
     max-width: 500px;
     width: 100%;
-    border-radius: 10px; /* Adjusted border-radius to match container */
+    border-radius: 10px;
 }

@@ -118,9 +118,9 @@ nav ul li a:hover {
 }
 
 footer {
-    background-color: #00264d; /* Changed to match header */
+    background-color: #00264d;
     color: white;
-    padding: 20px; /* Increased padding to match header */
+    padding: 20px;
     text-align: center;
     margin: 30px auto 0;
     font-size: 0.9em;
@@ -128,8 +128,8 @@ footer {
     max-width: 1200px;
     width: 100%;
     border-radius: 20px 20px 0 0;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Added box shadow to match header */
-    border-top: 3px solid #ffcc00; /* Added top border to match header */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    border-top: 3px solid #ffcc00;
     font-family: 'Vazir', sans-serif;
 }
 
@@ -143,7 +143,7 @@ footer {
     .news-section {
         display: flex;
         flex-direction: column;
-        align-items: center; /* Center items horizontally */
+        align-items: center;
     }
 
     .news-item {
@@ -151,12 +151,12 @@ footer {
         margin-bottom: 20px;
         box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
         border-radius: 8px;
-        display: flex; /* Added to enable centering of content */
-        flex-direction: column; /* Ensures content is stacked vertically */
+        display: flex;
+        flex-direction: column;
     }
 
     header .logo h1 {
-        font-size: 2em; /* Adjusted font size for smaller screens */
+        font-size: 2em;
     }
 
     header {
@@ -172,9 +172,9 @@ footer {
     }
 
     footer {
-        background-color: #00264d; /* Changed to match header */
+        background-color: #00264d;
         color: white;
-        padding: 20px; /* Increased padding to match header */
+        padding: 20px;
         text-align: center;
         margin: 30px auto 0;
         font-size: 0.9em;
@@ -182,8 +182,8 @@ footer {
         max-width: 1200px;
         width: 100%;
         border-radius: 20px 20px 0 0;
-        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Added box shadow to match header */
-        border-top: 3px solid #ffcc00; /* Added top border to match header */
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+        border-top: 3px solid #ffcc00;
     }
 
     .container {
@@ -193,22 +193,22 @@ footer {
 
 @media (max-width: 480px) {
     header .logo h1 {
-        font-size: 1.8em; /* Further reduced font size for very small screens */
+        font-size: 1.8em;
     }
 
     nav ul {
-        gap: 15px; /* Reduced gap for smaller screens */
+        gap: 15px;
     }
 
     .news-item h3 {
-        font-size: 1.3em; /* Adjusted heading size for smaller screens */
+        font-size: 1.3em;
     }
 
     .news-item p {
-        font-size: 0.9em; /* Adjusted paragraph size for smaller screens */
+        font-size: 0.9em;
     }
 
     footer {
-        font-size: 0.7em; /* Further reduced footer font size */
+        font-size: 0.7em;
     }
 }
