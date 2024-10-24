@@ -1,0 +1,350 @@
+@font-face {
+    font-family: IranNastaliqfont;
+    src: url(../assets/fonts/IranNastaliq.ttf);
+}
+
+body {
+    font-family: 'Vazir', sans-serif;
+    background-color: #f3f4f6;
+    margin: 0;
+    padding: 0;
+    direction: rtl;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+header {
+    background-color: #00264d;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    border-radius: 0 0 20px 20px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    border-bottom: 3px solid #ffcc00;
+    width: 100%; /* تغییر به عرض 100% */
+    max-width: 1100px; /* حداکثر عرض */
+    margin: 0 auto; /* مرکز کردن */
+    height: 130px; /* ارتفاع ثابت برای هدر */
+}
+
+header .logo h1 {
+    font-size: 3em;
+    margin: 0;
+    font-family: IranNastaliqfont, serif;
+    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.4);
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+nav ul li a {
+    font-family: 'Vazir', sans-serif;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: #ffcc00;
+    color: #00264d;
+    transform: scale(1.1);
+}
+
+.news-section {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.news-item {
+    background-color: white;
+    padding: 15px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    width: 30%;
+    transition: transform 0.3s ease;
+    margin: 10px;
+}
+
+.news-item:hover {
+    transform: translateY(-5px);
+}
+
+.news-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    transition: transform 0.5s ease, filter 0.5s ease;
+    filter: blur(1.5px);
+}
+
+.news-item img:hover {
+    transform: scale(1.05);
+    filter: blur(0);
+}
+
+.news-item h3 {
+    font-size: 1.5em;
+    color: #004080;
+    margin-bottom: 10px;
+}
+
+.news-item p {
+    font-size: 1em;
+    color: #555;
+}
+
+.news-item a {
+    text-decoration: none;
+    color: #004080;
+    transition: color 0.3s ease;
+}
+
+.news-item a:hover {
+    color: #ffcc00;
+}
+
+.content-wrapper {
+    display: flex;
+    margin-top: 20px;
+}
+
+.main-content {
+    width: 60%;
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.main-content .news-image {
+    width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.main-content .news-date {
+    font-size: 0.9em;
+    color: #888;
+    margin-bottom: 10px;
+    display: inline-block;
+    text-align: left;
+}
+
+.main-content .news-title {
+    font-size: 2em;
+    color: #004080;
+    margin-bottom: 15px;
+}
+
+.main-content p {
+    font-size: 1em;
+    color: #555;
+    line-height: 1.5;
+    margin-bottom: 15px;
+}
+
+a {
+    text-decoration: none;
+    color: #004080;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #ffcc00;
+}
+
+.sidebar {
+    width: 25%;
+    background-color: #fefefe;
+    padding: 20px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    margin-right: 10px;
+}
+
+.sidebar h3 {
+    color: #004080;
+    font-size: 1.5em;
+    margin-bottom: 0;
+    border-bottom: none;
+    padding-bottom: 0;
+    margin-right: 10px;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    margin-bottom: 10px;
+    align-items: center;
+}
+
+.sidebar ul li a {
+    text-decoration: none;
+    color: #004080;
+    font-weight: bold;
+    transition: color 0.3s ease;
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.sidebar ul li a:hover {
+    color: #ffcc00;
+}
+
+footer {
+    background-color: #00264d;
+    color: white;
+    padding: 40px 20px;
+    text-align: center;
+    font-size: 1em;
+    position: relative;
+    max-width: 1100px;
+    width: 100%;
+    border-radius: 20px 20px 0 0;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    border-top: 4px solid #ffcc00;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+/* Additional footer styles */
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding-bottom: 30px;
+}
+
+.footer-section {
+    flex: 1;
+    margin: 20px;
+    min-width: 220px;
+}
+
+.footer-section h3 {
+    margin-bottom: 15px;
+    font-size: 20px;
+    color: #ffcc00;
+}
+
+.footer-section p {
+    font-size: 15px;
+    line-height: 1.8;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 10px;
+}
+
+.footer-section ul li a {
+    color: #ecf0f1;
+    text-decoration: none;
+    font-size: 15px;
+    transition: color 0.3s ease;
+}
+
+.footer-section ul li a:hover {
+    color: #e74c3c;
+}
+
+.social-icons a img {
+    width: 35px;
+    height: 35px;
+    margin-right: 15px;
+}
+
+.footer-bottom {
+    border-top: 1px solid #34495e;
+    text-align: center;
+    display: grid;
+}
+
+.footer-bottom p {
+    font-size: 15px;
+}
+
+.icon-container {
+    position: relative;
+    width: 3.5rem;
+    height: 3.5rem;
+    text-align: center;
+    overflow-x: visible;
+    overflow-y: hidden;
+}
+
+.icon-background {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 3.5rem;
+    height: 3.5rem;
+    background: none;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    color: white;
+    transition: all 0.3s ease;
+}
+
+.icon-container:hover .icon-background {
+    transform: scale(0.6);
+    transform-origin: top;
+}
+
+.icon-label {
+    position: absolute;
+    font-weight: bold;
+    font-size: 0.875rem;
+    bottom: -2.5rem;
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+    white-space: nowrap;
+    transition: all 0.3s ease;
+}
+
+.icon-container:hover .icon-label {
+    bottom: 0;
+}
+
+.icon-background img {
+    max-width: 40px;
+}
+
+.pad {
+    transform: translateX(-60%);
+}
+
+iframe {
+    display: block;
+    margin: 0 auto;
+}

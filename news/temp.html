@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>شاه ایران رفت، خمینی آمد</title>
-    <link rel="stylesheet" href="../css/styles-news.css">
-    <meta name="description" content="بازگشت امام خمینی به ایران و تغییرات تاریخی که پس از آن رخ داد.">
+    <title>{news-title}</title>
+    <link rel="stylesheet" href="../css/styles.css"> 
+    <meta name="description" content="{description}">
 </head>
 <body>
     <div class="container">
@@ -15,8 +15,8 @@
             </div>
             <nav>
                 <ul>
-                    <li><a href="News-Site-AmirKabir/">صفحه اصلی</a></li>
-                    <li><a href="News-Site-AmirKabir/about-us/">درباره ما</a></li>
+                    <li><a href="/">صفحه اصلی</a></li>
+                    <li><a href="/about-us.html">درباره ما</a></li>
                 </ul>
             </nav>
         </header>
@@ -67,10 +67,9 @@
                 <!-- بخش کروکی و اطلاعات تماس -->
                 <div class="footer-section">
                     <h3>تماس با ما</h3>
-                    <p>آدرس: تهران، خیابان انقلاب، مدرسه امیر کبیر</p>
-                    <p>تلفن: ۰۲۱-۱۲۳۴۵۶۷۸</p>
-                    <p>ایمیل: info@schoolnews.com</p>
-                    <img src="map-placeholder.png" alt="Croquis" class="footer-croquis">
+                    <p style="margin-bottom: 0;">آدرس: آذربایجان غبربی، مهاباد، بلوار دانشگاه،جنب دانشگاه آزاد اسلامی مهاباد، هنرستان امیرکبیر</p>
+                    <p style="margin-top: 0;">تلفن: ۰۲۱-۱۲۳۴۵۶۷۸</p>
+                    
                 </div>
         
                 <!-- بخش شبکه‌های اجتماعی -->
@@ -78,17 +77,21 @@
                     <h3>ما را دنبال کنید</h3>
                     <p>در شبکه‌های اجتماعی همراه ما باشید:</p>
                     <div class="social-icons" style="display: flex; justify-content: space-evenly;">
-                        <div class="icon-container">
-                            <div class="icon-background">
-                                <img src="../img/icon/shad-icon.png" alt="">
-                            </div>
-                            <div class="icon-label">شاد</div>
+                        <div class="icon-container" style="overflow: hidden;">
+                            <a href="https://eitaa.com" target="_blank" style="overflow: hidden;">
+                                <div class="icon-background">
+                                    <img src="../img/icon/eitaa-icon.png" alt="">
+                                </div>
+                                <div class="icon-label">ایتا</div>
+                            </a>
                         </div>
-                        <div class="icon-container">
-                            <div class="icon-background">
-                                <img src="../img/icon/eitaa-icon.png" alt="">
-                            </div>
-                            <div class="icon-label">ایتا</div>
+                        <div class="icon-container" style="overflow: hidden;">
+                            <a href="https://shad.ir" target="_blank" style="overflow: hidden;">
+                                <div class="icon-background">
+                                    <img src="../img/icon/shad-icon.png" alt="">
+                                </div>
+                                <div class="icon-label">شاد</div>
+                            </a>
                         </div>
                     </div>
                 </div>
