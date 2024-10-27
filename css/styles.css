@@ -25,12 +25,12 @@ header {
     padding: 20px;
     text-align: center;
     border-radius: 0 0 20px 20px;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     border-bottom: 3px solid #ffcc00;
-    width: 100%; /* تغییر به عرض 100% */
-    max-width: 1100px; /* حداکثر عرض */
-    margin: 0 auto; /* مرکز کردن */
-    height: 130px; /* ارتفاع ثابت برای هدر */
+    width: 100%;
+    max-width: 1100px;
+    margin: 0 auto;
+    height: 130px;
 }
 
 header .logo h1 {
@@ -225,8 +225,7 @@ footer {
     border-radius: 20px 20px 0 0;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
     border-top: 4px solid #ffcc00;
-    margin: 0 auto;
-    margin-top: 20px;
+    margin: 20px auto 0;
 }
 
 /* Additional footer styles */
@@ -292,59 +291,79 @@ footer {
     font-size: 15px;
 }
 
-.icon-container {
-    position: relative;
-    width: 3.5rem;
-    height: 3.5rem;
-    text-align: center;
-    overflow-x: visible;
-    overflow-y: hidden;
-}
-
-.icon-background {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 3.5rem;
-    height: 3.5rem;
-    background: none;
-    border-radius: 50%;
-    position: absolute;
-    top: 0;
-    color: white;
-    transition: all 0.3s ease;
-}
-
-.icon-container:hover .icon-background {
-    transform: scale(0.6);
-    transform-origin: top;
-}
-
-.icon-label {
-    position: absolute;
-    font-weight: bold;
-    font-size: 0.875rem;
-    bottom: -2.5rem;
-    left: 50%;
-    transform: translateX(-50%);
-    color: white;
-    white-space: nowrap;
-    transition: all 0.3s ease;
-}
-
-.icon-container:hover .icon-label {
-    bottom: 0;
-}
-
-.icon-background img {
-    max-width: 40px;
-}
-
-.pad {
-    transform: translateX(-60%);
-}
 
 iframe {
     display: block;
     margin: 0 auto;
+}
+
+.card-slider {
+    position: relative;
+    width: 100%;
+    max-width: 800px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+}
+
+.card-container {
+    display: flex;
+    transition: transform 0.4s ease;
+}
+
+.card {
+    min-width: 33.33%;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    overflow: hidden;
+    margin: 0 5px;
+    text-align: center;
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    max-height: 150px;
+    object-fit: cover;
+}
+
+.card h3 {
+    padding: 10px;
+    font-size: 1.2em;
+}
+
+.card p {
+    padding: 0 10px 20px;
+    color: #555;
+}
+
+.arrow {
+    position: absolute;
+    top: 50%;
+    font-size: 2em;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #333;
+    transform: translateY(-50%);
+    transition: color 0.3s;
+    z-index: 1;
+}
+
+.arrow:hover {
+    color: #000;
+}
+
+.arrow:disabled {
+    color: #ccc;
+    cursor: not-allowed;
+}
+
+.left {
+    left: 10px;
+}
+
+.right {
+    right: 10px;
 }

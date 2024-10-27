@@ -1,15 +1,35 @@
-document.addEventListener("DOMContentLoaded", function () {
-    var swiper = new Swiper('.swiper-container', {
-        slidesPerView: 3, // تعداد آیتم‌هایی که همزمان نمایش داده می‌شود
-        spaceBetween: 30, // فاصله بین آیتم‌ها
-        loop: true, // تکرار شدن خودکار
-        autoplay: {
-            delay: 3000, // تاخیر در حرکت خودکار (3 ثانیه)
-            disableOnInteraction: false, // متوقف نشدن با کلیک کاربر
-        },
-        navigation: {
-            nextEl: '.swiper-button-next',
-            prevEl: '.swiper-button-prev',
-        },
-    });
+let currentIndex = 0;
+
+function slideCards(direction) {
+    const container = document.querySelector('.card-container');
+    const cards = document.querySelectorAll('.card');
+    const totalCards = cards.length;
+    const visibleCards = 3; // تعداد کارت‌های نمایان
+
+    // محاسبه تعداد کارت‌های نمایان
+    currentIndex += direction;
+
+    // محدود کردن به تعداد کارت‌های موجود
+    if (currentIndex < 0) {
+        currentIndex = 0;
+    } else if (currentIndex > totalCards - visibleCards) {
+        currentIndex = totalCards - visibleCards;
+    }
+
+    // محاسبه مقدار translateX
+    const translateX = -currentIndex * (100 / visibleCards);
+    container.style.transform = `translateX(${translateX}%)`; // استفاده از درصد برای translate
+
+    // غیرفعال کردن دکمه‌ها در صورت لزوم
+    document.querySelector('.left').disabled = currentIndex === 0;
+    document.querySelector('.right').disabled = currentIndex === totalCards - visibleCards;
+
+    // به‌روزرسانی دکمه‌ها بر اساس تعداد کارت‌های موجود
+    document.querySelector('.left').style.display = currentIndex === 0 ? 'none' : 'block';
+    document.querySelector('.right').style.display = currentIndex === totalCards - visibleCards ? 'none' : 'block';
+}
+
+// بارگذاری اولیه کارت‌ها
+document.addEventListener('DOMContentLoaded', () => {
+    slideCards(0); // بارگذاری اولیه
 });
