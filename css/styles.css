@@ -208,8 +208,8 @@ a {
 }
 
 .sidebar h3:hover {
-    color: #002060;
-    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.3);
+    color: #004080;
+    text-shadow: 2px 2px 6px #ffcc00;
 }
 
 .sidebar ul {
@@ -316,6 +316,54 @@ footer {
 iframe {
     display: block;
     margin: 0 auto;
+}
+
+.icon-container {
+    position: relative;
+    width: 3.5rem;
+    height: 3.5rem;
+    text-align: center;
+    overflow-x: visible;
+    overflow-y: hidden;
+}
+
+.icon-background {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 3.5rem;
+    height: 3.5rem;
+    background: none;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    color: white;
+    transition: all 0.3s ease;
+}
+
+.icon-container:hover .icon-background {
+    transform: scale(0.6);
+    transform-origin: top;
+}
+
+.icon-label {
+    position: absolute;
+    font-weight: bold;
+    font-size: 0.875rem;
+    bottom: -1rem; /* Adjusted to move it higher */
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+    white-space: nowrap;
+    transition: all 0.3s ease;
+}
+
+.icon-container:hover .icon-label {
+    bottom: 0;
+}
+
+.icon-background img {
+    max-width: 40px;
 }
 
 /*
