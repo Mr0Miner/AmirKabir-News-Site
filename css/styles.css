@@ -366,6 +366,33 @@ iframe {
     max-width: 40px;
 }
 
+p {
+    line-height: 1.6;
+    text-align: justify;
+}
+.about-section p {
+    margin-left: 50px;
+}
+
+.about-section img {
+    max-width: 800px;
+    width: auto;
+    height: auto;
+    border-radius: 15px;
+    display: block;
+    margin: 0 auto;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.about-section img:active {
+    transform: scale(2);
+}
+
+.about-section img.scaled {
+    transform: scale(1);
+}
+
 /*
 .card-slider {
     position: relative;
