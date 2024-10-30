@@ -33,29 +33,3 @@ function slideCards(direction) {
 document.addEventListener('DOMContentLoaded', () => {
     slideCards(0); // بارگذاری اولیه
 });
-
-
-function checkLink(linkId, fallbackUrl) {
-    const linkElement = document.getElementById(linkId);
-    const originalUrl = linkElement.href;
-
-    fetch(originalUrl, { method: 'HEAD' })
-        .then(response => {
-            if (!response.ok) {
-                // اگر خطایی رخ داد لینک به fallbackUrl تغییر کند
-                linkElement.href = `${fallbackUrl}${originalUrl}`;
-            }
-        })
-        .catch(() => {
-            // در صورت هر خطای دیگری هم لینک را تغییر بده
-            linkElement.href = `${fallbackUrl}${originalUrl}`;
-        });
-}
-
-// بررسی لینک‌ها
-const linksToCheck = [
-    { id: 'home-link', fallback: '/hot/' },
-    { id: 'about-link', fallback: '/hot/' }
-];
-
-linksToCheck.forEach(link => checkLink(link.id, link.fallback));
