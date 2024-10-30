@@ -43,15 +43,19 @@ function checkLink(linkId, fallbackUrl) {
         .then(response => {
             if (!response.ok) {
                 // اگر خطایی رخ داد لینک به fallbackUrl تغییر کند
-                linkElement.href = fallbackUrl + originalUrl;
+                linkElement.href = `${fallbackUrl}${originalUrl}`;
             }
         })
-        .catch(error => {
+        .catch(() => {
             // در صورت هر خطای دیگری هم لینک را تغییر بده
-            linkElement.href = fallbackUrl + originalUrl;
+            linkElement.href = `${fallbackUrl}${originalUrl}`;
         });
 }
 
 // بررسی لینک‌ها
-checkLink('home-link', '/hot/');
-checkLink('about-link', '/hot/');
+const linksToCheck = [
+    { id: 'home-link', fallback: '/hot/' },
+    { id: 'about-link', fallback: '/hot/' }
+];
+
+linksToCheck.forEach(link => checkLink(link.id, link.fallback));
