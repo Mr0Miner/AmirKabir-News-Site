@@ -29,61 +29,28 @@
                     خبرگزاری امیر کبیر، به عنوان یکی از پیشروان خبررسانی در سطح هنرستان‌ای، با هدف ارائه اخبار به‌روز و دقیق در حوزه‌های آموزشی، فرهنگی و علمی تأسیس شده است. این خبرگزاری با بهره‌گیری از تیمی مجرب و دلسوز، متشکل از هنرجویان نخبه، هنرجویان برجسته و دبیران عالی‌رتبه، همواره در تلاش است تا مخاطبان خود را از جدیدترین اخبار و اطلاعات مطلع سازد. ما به عنوان یک نهاد خبری، بر آنیم که فضایی فراهم کنیم تا هنرجویان به آسانی به اطلاعات دسترسی داشته و در جریان رویدادهای مهم قرار گیرند.
                 </p>
 
-                <!-- اضافه کردن عکس کادراداری -->
-                <div class="image-gallery">
-                    <img src="img/img-of-school-1.jpg" alt="عکس هنرستان" class="thumbnail" onclick="enlargeImage(this)">
-                    <img src="img/img-of-school-2.jpg" alt="عکس هنرستان" class="thumbnail" onclick="enlargeImage(this)">
-                    <img src="img/img-of-school-3.jpg" alt="عکس هنرستان" class="thumbnail" onclick="enlargeImage(this)">
+                <div class="gallery">
+                    <img src="img/img-of-school-1.jpg" class="thumbnail" onclick="openLightbox(0)">
+                    <img src="img/img-of-school-2.jpg" class="thumbnail" onclick="openLightbox(1)">
+                    <img src="img/img-of-school-3.jpg" class="thumbnail" onclick="openLightbox(2)">
                 </div>
-                <div id="enlargedImage" class="enlarged" onclick="this.style.display='none'">
-                    <img id="currentImage" src="" alt="عکس بزرگ شده">
+            
+                <div id="lightbox" class="lightbox" onclick="closeLightbox(event)">
+                    <img id="lightboxImage" class="lightbox-image" src="">
+                    <div class="prev" onclick="changeImage(-1, event)">&#10095;</div>
+                    <div class="next" onclick="changeImage(1, event)">&#10094;</div>
                 </div>
-                <style>
-                    .thumbnail {
-                        width: 100px; /* اندازه کوچک */
-                        cursor: pointer;
-                        transition: transform 0.3s ease;
-                    }
-                    .thumbnail:hover {
-                        transform: scale(1.1);
-                    }
-                    .enlarged {
-                        display: none;
-                        position: fixed;
-                        top: 0;
-                        left: 0;
-                        width: 100%;
-                        height: 100%;
-                        background-color: rgba(0, 0, 0, 0.8);
-                        justify-content: center;
-                        align-items: center;
-                    }
-                    .enlarged img {
-                        max-width: 90%;
-                        max-height: 90%;
-                    }
-                </style>
-                <script>
-                    function enlargeImage(img) {
-                        const enlarged = document.getElementById('enlargedImage');
-                        const currentImage = document.getElementById('currentImage');
-                        currentImage.src = img.src;
-                        enlarged.style.display = 'flex';
-                    }
-                </script>
-                
+
                 <p>
                     تیم ما متشکل از افرادی است که هر یک نقش حیاتی در پیشبرد اهداف خبرگزاری دارند. این اعضا با تخصص و تعهد خود، به ارتقای سطح کیفی و دقت خبرها کمک شایانی می‌کنند. ما به همکاری نزدیک با معلمان و هنرجویان افتخار می‌کنیم تا بتوانیم محتوای خبری را به بهترین شکل ممکن ارائه دهیم:
                 </p>
                 
                 <ul>
-                    <!-- عکس مدیر هنرستان -->
                     <li>
                         <strong>بایزید احمدی اقدم</strong> - مدیر هنرستان. ایشان با تجربه و مهارت‌های مدیریتی خود نقش مهمی در راهبری و هدایت مجموعه ایفا می‌کنند و با نظارت بر فعالیت‌های هنرستان، مسیر پیشرفت و رشد را هموار می‌سازند.
                         <br>
                     </li>
                     
-                    <!-- عکس معاونین -->
                     <li>
                         <strong>هیرش سهرابی</strong> - معاون آموزشی. او با تمرکز بر ارتقای سطح آموزش و فراهم کردن بستر مناسب برای یادگیری، به هنرجویان کمک می‌کند تا به بهترین نسخه خود برسند.
                         <br>
@@ -93,15 +60,15 @@
                         <br>
                     </li>
                     
-                    <!-- عکس کدنویس سایت -->
                     <li>
                         <strong>سید عرفان نظامی</strong> - طراح و کدنویس وب‌سایت خبرگزاری. او با ترکیب خلاقیت و مهارت‌های فنی خود، به طراحی و توسعه پلتفرمی کاربرپسند و جذاب پرداخته و با توجه به نیازهای کاربران، به بهبود تجربه کاربری کمک می‌کند. همچنین، او مسئولیت کلیه جنبه‌های فنی سایت را بر عهده دارد و اطمینان حاصل می‌کند که وب‌سایت همواره در دسترس و کارآمد باشد.
                         <br>
                     </li>
                 </ul>                
                 
-                <!-- اضافه کردن عکس کادر اداری -->
-                <img src="img/taff of school.png" alt="عکس کادر اداری">
+                <div class="gallery">
+                    <img src="img/staff-of-school.png" class="thumbnail" onclick="openLightbox(3)">
+                </div>
 
                 <p>
                     هنرستان ما با سابقه‌ای درخشان در زمینه آموزش و پرورش نسل‌های آینده‌ساز، یکی از پیشروان در ارائه روش‌های نوین آموزشی است. این هنرستان، با فراهم کردن محیطی پویا و انگیزشی، به هنرجویان خود کمک می‌کند تا استعدادهای نهفته خود را شکوفا کنند. خبرگزاری امیر کبیر یکی از پروژه‌های برجسته‌ای است که از این رویکرد نوآورانه بهره می‌برد و فرصتی بی‌نظیر برای هنرجویان فراهم می‌کند تا مهارت‌های خود را در زمینه‌های مختلف به نمایش بگذارند. ما به دنبال آن هستیم که با ایجاد یک بستر مناسب، هنرجویان ا تشویق کنیم تا در زمینه‌های مختلف فعالیت کنند و به رشد و پیشرفت خود ادامه دهند.
@@ -160,6 +127,6 @@
         </footer>
     </div>
 
-    <script src="script.js"></script>
+    <script src="js/script.js"></script>
 </body>
 </html>
