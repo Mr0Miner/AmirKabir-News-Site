@@ -2,6 +2,10 @@ let slideCurrentIndex = 0;
 
 function slideCards(direction) {
     const container = document.querySelector('.card-container');
+    if (!container) {
+        console.error("Element with class 'card-container' not found.");
+        return; // خروج از تابع اگر عنصر وجود نداشته باشد
+    }
     const cards = document.querySelectorAll('.card');
     const totalCards = cards.length;
     const visibleCards = 3; // تعداد کارت‌های نمایان
