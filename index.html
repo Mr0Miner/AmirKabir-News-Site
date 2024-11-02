@@ -28,7 +28,7 @@
                 <!--
                 <article class="news-item">
                     <a href="news/">
-                        <img src="news/" alt="alt0text" class="news-image">
+                        <img src="news/" alt="alt0text" class="news-image" loading="lazy">
                     </a>
                     <a href="news/">
                         <h3>{title}</h3>
@@ -37,7 +37,7 @@
                 </article>
                 -->
                 <article class="news-item">
-                    <a href="news/Distribution of textbooks in Mahabad/"><img src="img/news/Distribution of textbooks in Mahabad/169213482.jpg" alt="توزیع کتاب‌های درسی" class="news-image"></a>
+                    <a href="news/Distribution of textbooks in Mahabad/"><img src="img/news/Distribution of textbooks in Mahabad/169213482.jpg" alt="توزیع کتاب‌های درسی" class="news-image" loading="lazy"></a>
                     <h3><a href="news/Distribution of textbooks in Mahabad/">توزیع کتاب‌های درسی در مهاباد</a></h3>
                     <p>با نزدیک‌شدن به فصل درس و هنرستان و پایان تعطیلات تابستانی، تکاپو برای شروع سال تحصیلی جدید ...</p>
                 </article>
@@ -52,7 +52,7 @@
 
                         <article class="news-item">
                             <h3><a href="#">{title-of-itme}</a></h3>
-                            <img src="images/.jpg" alt="{title-of-news-image}" class="news-image">
+                            <img src="images/.jpg" alt="{title-of-news-image}" class="news-image" loading="lazy">
                             <p>{description-of-itme}</p>
                         </article>
 
@@ -62,7 +62,7 @@
                     <div class="news-section">
 
                         <article class="news-item">
-                            <img src="images/.jpg" alt="{title-of-news-image}" class="news-image">
+                            <img src="images/.jpg" alt="{title-of-news-image}" class="news-image" loading="lazy">
                             <h3><a href="#">{title-of-itme}</a></h3>
                             <p>{description-of-itme}</p>
                         </article>
@@ -72,7 +72,7 @@
                     <div class="news-section">
 
                         <article class="news-item">
-                            <img src="images/.jpg" alt="{title-of-news-image}" class="news-image">
+                            <img src="images/.jpg" alt="{title-of-news-image}" class="news-image" loading="lazy">
                             <h3><a href="#">{title-of-itme}</a></h3>
                             <p>{description-of-itme}</p>
                         </article>
@@ -80,56 +80,6 @@
                     </div>
                 </section>
             </section>
-
-            <!-- <div class="card-slider">
-                <button class="arrow left" aria-label="Previous">❮</button>
-                
-                <div class="card-container">
-                    <div class="card"> 
-                        <img src="image1.jpg" alt="تصویر 1" loading="lazy">
-                        <h3>عنوان 1</h3>
-                        <p>متن توضیحات کارت اول.</p>
-                    </div>
-                    <div class="card"> 
-                        <img src="image2.jpg" alt="تصویر 2" loading="lazy">
-                        <h3>عنوان 2</h3>
-                        <p>متن توضیحات کارت دوم.</p>
-                    </div>
-                    <div class="card"> 
-                        <img src="image3.jpg" alt="تصویر 3" loading="lazy">
-                        <h3>عنوان 3</h3>
-                        <p>متن توضیحات کارت سوم.</p>
-                    </div>
-                    <div class="card"> 
-                        <img src="image4.jpg" alt="تصویر 4" loading="lazy">
-                        <h3>عنوان 4</h3>
-                        <p>متن توضیحات کارت چهارم.</p>
-                    </div>
-                    <div class="card"> 
-                        <img src="image5.jpg" alt="تصویر 5" loading="lazy">
-                        <h3>عنوان 5</h3>
-                        <p>متن توضیحات کارت پنجم.</p>
-                    </div>
-                    <div class="card"> 
-                        <img src="image6.jpg" alt="تصویر 6" loading="lazy">
-                        <h3>عنوان 6</h3>
-                        <p>متن توضیحات کارت ششم.</p>
-                    </div>
-                    <div class="card"> 
-                        <img src="image7.jpg" alt="تصویر 7" loading="lazy">
-                        <h3>عنوان 7</h3>
-                        <p>متن توضیحات کارت هفتم.</p>
-                    </div>
-                    <div class="card"> 
-                        <img src="image8.jpg" alt="تصویر 8" loading="lazy">
-                        <h3>عنوان 8</h3>
-                        <p>متن توضیحات کارت هشتم.</p>
-                    </div>
-                </div>
-                
-                <button class="arrow right" aria-label="Next">❯</button>
-            </div> -->
-
         </main>
 
         <footer>
@@ -143,32 +93,30 @@
                 <!-- بخش کروکی و اطلاعات تماس -->
                 <div class="footer-section">
                     <h3>تماس با ما</h3>
-                    <p style="margin-bottom: 0;">آدرس: آذربایجان غبربی، مهاباد، بلوار دانشگاه،جنب دانشگاه آزاد اسلامی مهاباد، هنرستان امیرکبیر</p>
-                    <p style="margin-top: 0;">تلفن: ۰۲۱-۱۲۳۴۵۶۷۸</p>
-                    
+                    <p>آدرس: آذربایجان غبربی، مهاباد، بلوار دانشگاه،جنب دانشگاه آزاد اسلامی مهاباد، هنرستان امیرکبیر</p>
+                    <p>تلفن:</p>
+                    <p style="cursor: pointer; display: inline;" onclick="window.location.href='tel:04442343777';">044-4234-3777 - </p>
+                    <p style="cursor: pointer; display: inline;" onclick="window.location.href='tel:04442334555';">044-4233-4555</p>
                 </div>
         
                 <!-- بخش شبکه‌های اجتماعی -->
                 <div class="footer-section">
                     <h3>ما را دنبال کنید</h3>
-                    <p>در شبکه‌های اجتماعی همراه ما باشید:</p>
+                    <p class="notjustify">در شبکه‌های اجتماعی همراه ما باشید:</p>
+
                     <div class="social-icons" style="display: flex; justify-content: space-evenly;">
-                        <div class="icon-container" style="overflow: hidden;">
-                            <a href="https://eitaa.com" target="_blank" style="overflow: hidden;">
-                                <div class="icon-background">
-                                    <img src="../img/icon/eitaa-icon.png" alt="">
-                                </div>
-                                <div class="icon-label">ایتا</div>
-                            </a>
-                        </div>
-                        <div class="icon-container" style="overflow: hidden;">
-                            <a href="https://shad.ir" target="_blank" style="overflow: hidden;">
-                                <div class="icon-background">
-                                    <img src="../img/icon/shad-icon.png" alt="">
-                                </div>
-                                <div class="icon-label">شاد</div>
-                            </a>
-                        </div>
+                        <a href="" target="_blank" style="margin: 0; padding: 0;">
+                            <button class="btn">
+                                <img src="../img/icon/shad-icon.png" alt="" loading="lazy">
+                                <span class="icon-label">شاد</span>
+                            </button>
+                        </a>
+                        <a href="" target="_blank">
+                            <button class="btn">
+                                <img src="../img/icon/eitaa-icon.png" alt="" loading="lazy">
+                                <span class="icon-label">ایتا</span>
+                            </button>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -178,6 +126,6 @@
         </footer>
     </div>
 
-    <script src="script.js"></script> <!-- اضافه کردن فایل جاوا اسکریپت -->
+    <script src="js/script.js"></script>
 </body>
 </html>
