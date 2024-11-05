@@ -526,3 +526,17 @@ p {
     transform: scale(1.05);
     filter: blur(0);
 }
+
+.read-more {
+    text-align: right;
+    margin-right: 90%;
+}
+
+.read-more a {
+    background: none;
+    color: #004080;
+}
+
+.read-more a:hover {
+    text-decoration: underline;
+}
