@@ -536,7 +536,102 @@ p {
     background: none;
     color: #004080;
 }
-
 .read-more a:hover {
     text-decoration: underline;
+}
+
+
+@media (max-width: 768px) {
+    .container {
+        margin: 0;
+        padding: 0;
+    }
+
+    header {
+        height: auto;
+        padding: 15px;
+    }
+
+    header .logo h1 {
+        font-size: 2em;
+    }
+    .news-section {
+        flex-direction: column;
+    }
+
+    .news-item, .all-news-item {
+        width: 100%;
+    }
+
+    .sidebar {
+        width: 100%;
+        margin: 20px 0;
+    }
+
+    .main-content {
+        width: 100%;
+    }
+
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-section {
+        margin: 10px;
+    }
+}
+
+/* تبلت و لپ‌تاپ */
+@media (max-width: 1024px) {
+    .container {
+        margin: 0 auto;
+        padding: 0;
+    }
+
+    header .logo h1 {
+        font-size: 2.5em;
+    }
+
+    .news-section {
+        flex-direction: column;
+    }
+
+    .news-item, .all-news-item {
+        width: 100%;
+    }
+
+    .footer-container {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 480px) {
+    header {
+        padding: 10px;
+    }
+
+    header .logo h1 {
+        font-size: 1.8em;
+    }
+
+    nav ul {
+        gap: 5px;
+    }
+
+    .sidebar {
+        padding: 15px;
+    }
+
+    .footer-section {
+        margin: 5px;
+    }
+
+    .news-item h3 {
+        font-size: 1.2em;
+    }
+
+    .news-item p {
+        font-size: 0.9em;
+    }
 }
