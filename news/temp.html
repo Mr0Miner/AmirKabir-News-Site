@@ -9,18 +9,7 @@
 </head>
 <body>
     <div class="container">
-        <header>
-            <div class="logo">
-                <h1>خبرگزاری امیـر کبیـر</h1>
-            </div>
-            <nav>
-                <ul>
-                    <li><a href="../index.html">صفحه اصلی</a></li>
-                    <li><a href="../about-us.html">درباره ما</a></li>
-                    <li><a href="../all-news.html">همه اخبار</a></li>
-                </ul>
-            </nav>
-        </header>
+        <div id="header"></div>
 
         <div class="content-wrapper">
             <div class="main-content">
@@ -57,49 +46,10 @@
             </aside>
         </div>
 
-        <footer>
-            <div class="footer-container">
-                <!-- بخش اطلاعات سایت -->
-                <div class="footer-section">
-                    <h3>هنرستان امیرکبیر</h3>
-                    <p>ما همواره در تلاشیم تا جدیدترین و معتبرترین خبرها را به شما ارائه دهیم. همراه ما باشید و از خبرهای روز مطلع شوید.</p>
-                </div>
-        
-                <!-- بخش کروکی و اطلاعات تماس -->
-                <div class="footer-section">
-                    <h3>تماس با ما</h3>
-                    <p>آدرس: آذربایجان غبربی، مهاباد، بلوار دانشگاه،جنب دانشگاه آزاد اسلامی مهاباد، هنرستان امیرکبیر</p>
-                    <p>تلفن:</p>
-                    <p style="cursor: pointer; display: inline;" onclick="window.location.href='tel:04442343777';">044-4234-3777 - </p>
-                    <p style="cursor: pointer; display: inline;" onclick="window.location.href='tel:04442334555';">044-4233-4555</p>
-                </div>
-        
-                <!-- بخش شبکه‌های اجتماعی -->
-                <div class="footer-section">
-                    <h3>ما را دنبال کنید</h3>
-                    <p class="notjustify">در شبکه‌های اجتماعی همراه ما باشید:</p>
-
-                    <div class="social-icons" style="display: flex; justify-content: space-evenly;">
-                        <a href="" target="_blank" style="margin: 0; padding: 0;">
-                            <button class="btn">
-                                <img src="../img/icon/shad-icon.png" alt="" loading="lazy">
-                                <span class="icon-label">شاد</span>
-                            </button>
-                        </a>
-                        <a href="" target="_blank">
-                            <button class="btn">
-                                <img src="../img/icon/eitaa-icon.png" alt="" loading="lazy">
-                                <span class="icon-label">ایتا</span>
-                            </button>
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <p>تمامی حقوق این اثر متعلق به هنرستان امیرکبیر است. هرگونه کپی‌برداری بدون اجازه ممنوع می‌باشد. &copy; 1403</p>
-            </div>
-        </footer>
+        <div id="footer"></div>
         
     </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>$("#footer").load("../../html/footer.html");$("#header").load("html/header.html");</script>
 </body>
 </html>

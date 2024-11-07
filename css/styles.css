@@ -157,13 +157,14 @@ nav ul li a:hover::after {
     margin-bottom: 15px;
     border-radius: 8px;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
 }
 
 .main-content .news-date {
     font-size: 0.9em;
     color: #888;
     margin-bottom: 10px;
-    display: inline-block;
+    display: inline;
     text-align: left;
 }
 
@@ -171,6 +172,7 @@ nav ul li a:hover::after {
     font-size: 2em;
     color: #004080;
     margin-bottom: 15px;
+    display: inline;
 }
 
 .main-content p {
@@ -535,6 +537,7 @@ p {
 .read-more a {
     background: none;
     color: #004080;
+    display: inline-block; /* اضافه کردن این خط برای جلوگیری از انباشته شدن */
 }
 .read-more a:hover {
     text-decoration: underline;
