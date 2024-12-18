@@ -30,6 +30,18 @@ function updateLightboxImage() {
     }, 50); // کمی تاخیر برای روان بودن
 }
 
+fetch('assets/json/quotes.json')
+    .then(response => response.json())
+    .then(quotes => {
+        // انتخاب یک جمله تصادفی
+        const randomIndex = Math.floor(Math.random() * quotes.length);
+        document.getElementById('quote').textContent = quotes[randomIndex];
+    })
+    .catch(error => {
+        console.error('خطا در بارگذاری جملات:', error);
+        document.getElementById('quote').textContent = 'خطا در بارگذاری جملات!';
+    });
+
 // اضافه کردن رویداد کلیک به دکمه‌ها
 document.querySelector('.left').addEventListener('click', () => slideCards(-1));
 document.querySelector('.right').addEventListener('click', () => slideCards(1));
