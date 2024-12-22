@@ -278,6 +278,13 @@ footer {
     margin: 0;
 }
 
+.footer-section #quote {
+    font-size: 15px;
+    line-height: 1.8;
+    margin: 0;
+    text-align: justify;
+}
+
 .footer-section .notjustify {
     text-align: center;
 }

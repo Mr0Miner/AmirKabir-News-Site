@@ -1,5 +1,5 @@
 let lightboxCurrentIndex = 0;
-const images = ["img/img-of-school-1.jpg", "img/img-of-school-2.jpg", "img/img-of-school-3.jpg", "img/staff-of-school.png"];
+const images = ["image/about-us/img-of-school-1.jpg", "image/about-us/img-of-school-2.jpg", "image/about-us/img-of-school-3.jpg", "image/about-us/staff-of-school.png"];
 
 function openLightbox(index) {
     lightboxCurrentIndex = index;
@@ -30,7 +30,7 @@ function updateLightboxImage() {
     }, 50); // کمی تاخیر برای روان بودن
 }
 
-fetch('assets/json/quotes.json')
+fetch('https://raw.githubusercontent.com/Mr0Miner/AmirKabir-files/refs/heads/master/json/quotes.json')
     .then(response => response.json())
     .then(quotes => {
         // انتخاب یک جمله تصادفی
