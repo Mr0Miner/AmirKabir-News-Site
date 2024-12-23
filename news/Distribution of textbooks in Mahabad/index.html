@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>توزیع کتاب‌های درسی در مهاباد</title>
+    <title>توزیع کتاب‌های درسی در مهاباد - خبرگزار امیرکبر</title>
     <link rel="stylesheet" href="../../css/styles.css"> 
-    <meta name="description" content="بازگشت امام خمینی به ایران و تغییرات تاریخی که پس از آن رخ داد.">
+    <meta name="description" content="توزیع کتاب‌های درسی در مهاباد">
 </head>
 <body>
     <div class="container">
@@ -14,7 +14,7 @@
         <div class="content-wrapper">
             <div class="main-content">
                 <!-- تصویر خبر -->
-                <img src="data/169213482.jpg" alt="تصویر خبر" class="news-image"> <br>
+                <img src="data/169213482.jpg" alt="img-of-news" class="news-image"> <br>
                 <!-- عنوان خبر -->
                 <h2 class="news-title">توزیع کتاب‌های درسی در مهاباد</h2>
                 <!-- تاریخ خبر -->
@@ -22,11 +22,11 @@
                 <!-- متن خبر -->
                 <p>به گزارش <a href="https://mahabad.iribnews.ir/">خبرگزاری صدا و سیما مرکز مهاباد</a>، مدیر آموزش و پرورش مهاباد اعلام کرد که افرادی که هنوز برای دریافت کتب درسی ثبت نام نکرده‌اند، باید حداکثر در چند روز آینده اقدام کنند.</p>
                 <p>رسولی همچنین افزود: توزیع کتاب‌های درسی از یازدهم شهریور به‌طور همزمان با سایر نقاط کشور آغاز شده است و مدیران مدارس بر اساس تعداد دانش‌آموزان، اقدام به تحویل کتاب‌ها خواهند کرد.</p>
-                <p>وی ادامه داد: پس از توزیع کتاب‌های مقطع ابتدایی، توزیع کتب درسی مقاطع متوسطه اول و دوم نیز آغاز خواهد شد. امسال بیش از ۴۷ هزار دانش‌آموز مهابادی به مدرسه می‌روند و سال تحصیلی جدید را با این کتاب‌ها آغاز خواهند کرد.</p>
+                <p>وی ادامه داد: پس از توزیع کتاب‌های مقطع ابتدایی، توزیع کتب درسی مقاطع متوسطه اول و دوم نیز آغاز خواهد شد. امسال بیش از ۴۷ هزار دانش‌آموز مهابادی به مدرسه می‌روند و سال تحصیلی جدید را با این کتاب‌ها آغاز خواهند کرد.</p> -->
                 <video class="video-container" controls>
                     <source src="data/11480059_409.mp4" type="video/mp4">
                     مرورگر شما از تگ ویدیو پشتیبانی نمی‌کند.
-                </video>
+                </video> 
                 <p>به نقل از «خبرگزاری صدا و سیما»</p>
             </div>
 
@@ -38,12 +38,30 @@
                         <a href="#">{news-title}</a>
                     </li>
                 -->
+                    <li>
+                        <a href="#">{news-title}</a>
+                    </li>
                 </ul>
             </aside>
         </div>
+
         <div id="footer"></div>
-        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-        <script>$("#footer").load("../../html/footer.html");$("#header").load("../../html/header.html");</script>
+        
     </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="../../js/script.js"></script>
+    <script>
+        const scriptPath = document.currentScript.src;
+        const scriptDir = scriptPath.substring(0, scriptPath.lastIndexOf('/'));
+    
+        const relativeHeaderPath = "../assets/html/header.html";
+        const relativeFooterPath = "../assets/html/footer.html";
+    
+        const headerPath = `${scriptDir}/${relativeHeaderPath}`;
+        const footerPath = `${scriptDir}/${relativeFooterPath}`;
+    
+        $("#footer").load(footerPath);
+        $("#header").load(headerPath);
+    </script>
 </body>
 </html>

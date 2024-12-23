@@ -15,7 +15,7 @@ body {
 }
 
 .container {
-    max-width: 1200px;
+    max-width: 1100px;
     margin: 0 auto;
     padding: 0;
     flex: 1; /* Allows the container to grow and fill the space */
@@ -180,6 +180,7 @@ nav ul li a:hover::after {
     color: #555;
     line-height: 1.5;
     margin-bottom: 15px;
+    text-align: justify;
 }
 
 a {

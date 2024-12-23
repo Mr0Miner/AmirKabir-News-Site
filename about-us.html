@@ -73,8 +73,18 @@
     </div>
 
     <script src="js/script.js"></script>
-    <script src="js/config.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script>$("#footer").load("assets/html/footer.html");$("#header").load("assets/html/header.html");</script>
-</body>
+    <script>
+        const scriptPath = document.currentScript.src;
+        const scriptDir = scriptPath.substring(0, scriptPath.lastIndexOf('/'));
+    
+        const relativeHeaderPath = "../assets/html/header.html";
+        const relativeFooterPath = "../assets/html/footer.html";
+    
+        const headerPath = `${scriptDir}/${relativeHeaderPath}`;
+        const footerPath = `${scriptDir}/${relativeFooterPath}`;
+    
+        $("#footer").load(footerPath);
+        $("#header").load(headerPath);
+    </script>
 </html>
