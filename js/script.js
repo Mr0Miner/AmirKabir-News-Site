@@ -19,7 +19,3 @@ function fetchQuotes() {
 }
 
 fetchQuotes(); // فراخوانی تابع برای بارگذاری احادیث
-
-// اضافه کردن رویداد کلیک به دکمه‌ها برای تغییر تصاویر
-document.querySelector('.left').addEventListener('click', () => changeImage(-1)); // دکمه چپ
-document.querySelector('.right').addEventListener('click', () => changeImage(1)); // دکمه راست
