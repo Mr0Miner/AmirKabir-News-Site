@@ -142,13 +142,13 @@
         const scriptPath = document.currentScript.src;
         const scriptDir = scriptPath.substring(0, scriptPath.lastIndexOf('/'));
     
-        const relativeHeaderPath = "../assets/html/header.html";
+        const relativeHeaderPath = "../News-Site-AmirKabir/assets/html/header.html";
         const relativeFooterPath = "../assets/html/footer.html";
     
         const headerPath = `${scriptDir}/${relativeHeaderPath}`;
         const footerPath = `${scriptDir}/${relativeFooterPath}`;
     
-        $("#footer").load(footerPath);
+        $("#footer").load("https://raw.githubusercontent.com/Mr0Miner/News-Site-AmirKabir/refs/heads/main/assets/html/footer.html");
         $("#header").load(headerPath);
     </script>
     <script>
