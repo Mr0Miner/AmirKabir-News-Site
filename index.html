@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="css/styles.css">
     <meta name="description" content="صفحه اصلی خبرگزاری ایران با آخرین اخبار و تحلیل‌ها.">
     <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
     <style>
         /* استایل‌های اسلایدشو */
         * {box-sizing: border-box}
@@ -15,14 +16,13 @@
 
         .slideshow-container {max-width: 1000px; position: relative;margin: auto;}
 
-        .prev, .next {
-            cursor: pointer;position: absolute;top: 50%;width: auto;padding: 16px;margin-top: -22px;color: white;font-weight: bold;font-size: 18px;transition: 0.6s ease;border-radius: 0 3px 3px 0; user-select: none;}
+        .prev, .next {cursor: pointer;position: absolute;top: 50%;width: auto;padding: 16px;margin-top: -22px;color: black;font-weight: bold;font-size: 18px;transition: 0.6s ease;border-radius: 0 3px 3px 0; user-select: none;}
 
         .next { right: 0; border-radius: 3px 0 0 3px; }
-        .prev:hover, .next:hover { background-color: rgba(0,0,0,0.8); }
+        .prev:hover, .next:hover { background-color: rgba(0,0,0,0.8); color: white}
         .text { color: #f2f2f2; font-size: 15px; padding: 8px 12px; position: absolute; bottom: 8px; width: 100%; text-align: center; }
         .numbertext { color: #f2f2f2; font-size: 12px; padding: 8px 12px; position: absolute; top: 0; }
-        .dot { cursor: pointer; height: 15px; width: 15px; margin: 0 2px; background-color: #bbb; border-radius: 50%; display: inline-block; transition: background-color 0.6s ease; }
+        .dot { cursor: pointer; height: 5px; width: 5px; margin: 0 2px; background-color: #bbb; border-radius: 50%; display: inline-block; transition: background-color 0.6s ease; }
         .active, .dot:hover { background-color: #717171; }
         .fade { animation-name: fade; animation-duration: 1.5s; }
         @keyframes fade { from {opacity: 0; transform: scale(0.9);} to {opacity: 1; transform: scale(1);} }
@@ -67,61 +67,28 @@
                     -->
                     <h3>مـــــــــدارس</h3>
                     <div class="news-section">
-                        <article class="news-item">
-                            <a href="news/Distribution of textbooks in Mahabad/"><img src="news/Distribution of textbooks in Mahabad/data/169213482.jpg" alt="توزیع کتاب‌های درسی" class="news-image" loading="lazy"></a>
-                            <h3><a href="news/Distribution of textbooks in Mahabad/">توزیع کتاب‌های درسی در مهاباد</a></h3>
-                            <p>با نزدیک‌شدن به فصل درس و هنرستان و پایان تعطیلات تابستانی، تکاپو برای شروع سال تحصیلی جدید ...</p>
-                        </article>
-                        
-                        <article class="news-item">
-                            <img src="images/.jpg" alt="{title-of-news-image}" class="news-image" loading="lazy">
-                            <h3><a href="#">{title-of-itme}</a></h3>
-                            <p>{description-of-itme}</p>
-                        </article>
-
-                        <article class="news-item">
-                            <img src="images/.jpg" alt="{title-of-news-image}" class="news-image" loading="lazy">
-                            <h3><a href="#">{title-of-itme}</a></h3>
-                            <p>{description-of-itme}</p>
-                        </article>
-
-                        <article class="news-item">
-                            <img src="images/.jpg" alt="{title-of-news-image}" class="news-image" loading="lazy">
-                            <h3><a href="#">{title-of-itme}</a></h3>
-                            <p>{description-of-itme}</p>
-                        </article>
                     </div>
                     <p class="read-more"><a href="news/all-news.html">همه اخبار ها</a></p>
                     
-                    <h3>{title-of-section}</h3>
-                    
-                    <div class="news-section">
-
-                        <!-- <article class="news-item">
-                            <img src="images/.jpg" alt="{title-of-news-image}" class="news-image" loading="lazy">
-                            <h3><a href="#">{title-of-itme}</a></h3>
-                            <p>{description-of-itme}</p>
-                        </article> -->
-
-
-                    </div>
                 </section>
             </section>
             <h2>اسلایدشو</h2>
             <div class="slideshow-container">
                 <div class="mySlides fade">
                     <article class="news-item" style="display: inline-block; margin-right: 10px;">
-                        <img src="images/.jpg" alt="{title-of-news-image}" class="news-image" loading="lazy">
-                        <h3><a href="#">{title-of-itme}</a></h3>
-                        <p>{description-of-itme}</p>
-                    </article><article class="news-item" style="display: inline-block; margin-right: 10px;">
-                        <img src="images/.jpg" alt="{title-of-news-image}" class="news-image" loading="lazy">
-                        <h3><a href="#">{title-of-itme}</a></h3>
-                        <p>{description-of-itme}</p>
-                    </article><article class="news-item" style="display: inline-block; margin-right: 10px;">
-                        <img src="images/.jpg" alt="{title-of-news-image}" class="news-image" loading="lazy">
-                        <h3><a href="#">{title-of-itme}</a></h3>
-                        <p>{description-of-itme}</p>
+                        <a href="news/Distribution of textbooks in Mahabad/"><img src="news/Distribution of textbooks in Mahabad/data/169213482.jpg" alt="توزیع کتاب‌های درسی" class="news-image" loading="lazy"></a>
+                        <h3><a href="news/Distribution of textbooks in Mahabad/">توزیع کتاب‌های درسی در مهاباد</a></h3>
+                        <p>با نزدیک‌شدن به فصل درس و هنرستان و پایان تعطیلات تابستانی، تکاپو برای شروع سال تحصیلی جدید ...</p>
+                    </article>
+                    <article class="news-item" style="display: inline-block; margin-right: 10px;">
+                        <a href="news/12 Mahabad schools are dilapidated/"><img src="news/12 Mahabad schools are dilapidated/data/17677174_274.jpg" alt="۱۲ مدرسه مهاباد فرسوده است" class="news-image" loading="lazy"></a>
+                        <h3><a href="news/12 Mahabad schools are dilapidated/">۱۲ مدرسه مهاباد فرسوده است</a></h3>
+                        <p>اسعد رسولی مدیر آموزش و پرورش مهاباد گفت: هم اکنون ۳۲۵ مدرسه در قالب هزار و ۵۰۰ کلاس در شهرستان به پنج هزار و ۲۳۶ دانش آموز  ...</p>
+                    </article>
+                    <article class="news-item" style="display: inline-block; margin-right: 10px;">
+                        <a href="news/305 classrooms to be added to Mahabad's educational spaces/"><img src="news/305 classrooms to be added to Mahabad's educational spaces/data/3545537.jpg" alt="۳۰۵ کلاس درس به فضاهای آموزشی مهاباد افزوده می شود" class="news-image" loading="lazy"></a>
+                        <h3><a href="news/305 classrooms to be added to Mahabad's educational spaces/">۳۰۵ کلاس درس به فضاهای آموزشی مهاباد افزوده می شود</a></h3>
+                        <p>با نزدیک‌شدن به فصل درس و هنرستان و پایان تعطیلات تابستانی، تکاپو برای شروع سال تحصیلی جدید ...</p>
                     </article>
                 </div>
                 <div class="mySlides fade">
@@ -154,8 +121,8 @@
                         <p>{description-of-itme}</p>
                     </article>
                 </div>
-                <a class="prev" onclick="plusSlides(-1)">❮</a>
-                <a class="next" onclick="plusSlides(1)">❯</a>
+                <a class="prev" onclick="plusSlides(-1)">❯</a>
+                <a class="next" onclick="plusSlides(1)">❮</a>
             </div>
             <br>
             <div style="text-align:center">
@@ -163,6 +130,7 @@
                 <span class="dot" onclick="currentSlide(2)"></span> 
                 <span class="dot" onclick="currentSlide(3)"></span> 
             </div>
+            <p class="read-more"><a href="news/all-news.html">همه اخبار ها</a></p>
         </main>
 
         <div id="footer"></div>

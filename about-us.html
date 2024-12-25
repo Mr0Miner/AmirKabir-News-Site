@@ -7,6 +7,26 @@
     <link rel="stylesheet" href="css/styles.css">
     <meta name="description" content="درباره خبرگزاری امیر کبیر و اهداف آن.">
     <link rel="shortcut icon" href="../img/favicon.png" type="image/x-icon">
+    <style>
+        /* استایل‌های اسلایدشو */
+        * {box-sizing: border-box}
+        .mySlides {display: none}
+        img {vertical-align: middle;}
+
+        .slideshow-container {max-width: 1000px; position: relative;margin: auto;}
+
+        .prev, .next {cursor: pointer; position: absolute; top: 50%;width: auto; padding: 16px; margin-top: -22px; color: black; font-weight: bold; font-size: 18px; transition: 0.6s ease; border-radius: 0 3px 3px 0; user-select: none;}
+
+        .next { border-radius: 3px 0 0 3px; }
+        .prev:hover, .next:hover { background-color: rgba(0,0,0,0.8); color: white}
+        .text { color: #f2f2f2; font-size: 15px; padding: 8px 12px; position: absolute; bottom: 8px; width: 100%; text-align: center; }
+        .numbertext { color: #f2f2f2; font-size: 12px; padding: 8px 12px; position: absolute; top: 0; }
+        .dot { cursor: pointer; height: 5px; width: 5px; margin: 0 2px; background-color: #bbb; border-radius: 50%; display: inline-block; transition: background-color 0.6s ease; }
+        .active, .dot:hover { background-color: #717171; }
+        .fade { animation-name: fade; animation-duration: 1.5s; }
+        @keyframes fade { from {opacity: 0; transform: scale(0.9);} to {opacity: 1; transform: scale(1);} }
+        @media only screen and (max-width: 300px) { .prev, .next,.text {font-size: 11px} }
+    </style>
 </head>
 <body>
     <div class="container">
@@ -18,23 +38,31 @@
                     خبرگزاری امیر کبیر، به عنوان یکی از پیشروان خبررسانی در سطح هنرستان‌ای، با هدف ارائه اخبار به‌روز و دقیق در حوزه‌های آموزشی، فرهنگی و علمی تأسیس شده است. این خبرگزاری با بهره‌گیری از تیمی مجرب و دلسوز، متشکل از هنرجویان نخبه، هنرجویان برجسته و دبیران عالی‌رتبه، همواره در تلاش است تا مخاطبان خود را از جدیدترین اخبار و اطلاعات مطلع سازد. ما به عنوان یک نهاد خبری، بر آنیم که فضایی فراهم کنیم تا هنرجویان به آسانی به اطلاعات دسترسی داشته و در جریان رویدادهای مهم قرار گیرند.
                 </p>
 
-                <div class="gallery">
-                    <img src="image/about-us/img-of-school-1.jpg" class="thumbnail" onclick="openLightbox(0)">
-                    <img src="image/about-us/img-of-school-2.jpg" class="thumbnail" onclick="openLightbox(1)">
-                    <img src="image/about-us/img-of-school-3.jpg" class="thumbnail" onclick="openLightbox(2)">
+                <div class="slideshow-container">
+                    <div class="mySlides fade">
+                        <img src="assets/image/about-us/img-of-school-1.jpg">
+                    </div>
+                    <div class="mySlides fade">
+                        <img src="assets/image/about-us/img-of-school-2.jpg">
+                    </div>
+                    <div class="mySlides fade">
+                        <img src="assets/image/about-us/img-of-school-3.jpg">
+                    </div>
                 </div>
-            
-                <div id="lightbox" class="lightbox" onclick="closeLightbox(event)">
-                    <img id="lightboxImage" class="lightbox-image" src="">
-                    <div class="prev" onclick="changeImage(-1, event)">&#10095;</div>
-                    <div class="next" onclick="changeImage(1, event)">&#10094;</div>
+                <a class="prev" onclick="plusSlides(-1)">❯</a>
+                <a class="next" onclick="plusSlides(1)">❮</a>
+                <br>
+                <div style="text-align:center">
+                    <span class="dot" onclick="currentSlide(1)"></span> 
+                    <span class="dot" onclick="currentSlide(2)"></span> 
+                    <span class="dot" onclick="currentSlide(3)"></span> 
                 </div>
-
+                
                 <p>
                     تیم ما متشکل از افرادی است که هر یک نقش حیاتی در پیشبرد اهداف خبرگزاری دارند. این اعضا با تخصص و تعهد خود، به ارتقای سطح کیفی و دقت خبرها کمک شایانی می‌کنند. ما به همکاری نزدیک با معلمان و هنرجویان افتخار می‌کنیم تا بتوانیم محتوای خبری را به بهترین شکل ممکن ارائه دهیم:
                 </p>
                 
-                <ul>
+                <ul style="text-align: justify;">
                     <li>
                         <strong>بایزید احمدی اقدم</strong> - مدیر هنرستان. ایشان با تجربه و مهارت‌های مدیریتی خود نقش مهمی در راهبری و هدایت مجموعه ایفا می‌کنند و با نظارت بر فعالیت‌های هنرستان، مسیر پیشرفت و رشد را هموار می‌سازند.
                         <br>
@@ -42,11 +70,13 @@
                     
                     <li>
                         <strong>هیرش سهرابی</strong> - معاون آموزشی. او با تمرکز بر ارتقای سطح آموزش و فراهم کردن بستر مناسب برای یادگیری، به هنرجویان کمک می‌کند تا به بهترین نسخه خود برسند.
-                        <br>
+
+                    </li>
+                    <li>
                         <strong>حسین خضرنژاد</strong> - معاون فنی. او با تخصص و نظارت دقیق خود، کیفیت و اثربخشی برنامه‌های فنی و عملی هنرستان را تضمین می‌کند و به هنرجویان در کسب مهارت‌های فنی کمک می‌کند.
-                        <br>
+                    </li>
+                    <li>
                         <strong>بهزاد نمکی</strong> - معاون پرورشی و تربیت بدنی. با تشویق هنرجویان به شرکت در فعالیت‌های ورزشی و فرهنگی، به آنها انگیزه و روحیه تیمی می‌بخشد و محیطی سالم و پویا را فراهم می‌آورد.
-                        <br>
                     </li>
                     
                     <li>
@@ -55,9 +85,7 @@
                     </li>
                 </ul>                
                 
-                <div class="gallery">
-                    <img src="image/about-us/staff-of-school.png" class="thumbnail" onclick="openLightbox(3)">
-                </div>
+                <img src="assets/image/about-us/staff-of-school.png">
 
                 <p>
                     هنرستان ما با سابقه‌ای درخشان در زمینه آموزش و پرورش نسل‌های آینده‌ساز، یکی از پیشروان در ارائه روش‌های نوین آموزشی است. این هنرستان، با فراهم کردن محیطی پویا و انگیزشی، به هنرجویان خود کمک می‌کند تا استعدادهای نهفته خود را شکوفا کنند. خبرگزاری امیر کبیر یکی از پروژه‌های برجسته‌ای است که از این رویکرد نوآورانه بهره می‌برد و فرصتی بی‌نظیر برای هنرجویان فراهم می‌کند تا مهارت‌های خود را در زمینه‌های مختلف به نمایش بگذارند. ما به دنبال آن هستیم که با ایجاد یک بستر مناسب، هنرجویان ا تشویق کنیم تا در زمینه‌های مختلف فعالیت کنند و به رشد و پیشرفت خود ادامه دهند.
@@ -67,24 +95,59 @@
                     ما در خبرگزاری امیر کبیر متعهد هستیم که همواره به ارائه اخبار دقیق، شفاف و بی‌طرفانه پایبند باشیم. رسالت ما اطلاع‌رسانی به‌موقع و معتبر است، به‌طوری که بتوانیم در ارتقای آگاهی عمومی و ارتقای سطح فرهنگی هنرستان و جامعه سهیم باشیم. ما به این باور داریم که اطلاعات صحیح و به‌موقع می‌تواند تأثیر بسزایی در تصمیم‌گیری‌های آگاهانه و بهبود کیفیت زندگی افراد داشته باشد.
                 </p>   
                 <iframe width="900" height="350" src="https://www.openstreetmap.org/export/embed.html?bbox=45.732994079589844%2C36.75857907890611%2C45.75091123580933%2C36.766159987731214&amp;layer=mapnik&amp;marker=36.762369626986874%2C45.741952657699585" style="border: 1px solid black;"></iframe>
+                <h3>حق کپی‌رایت خبرگزاری امیرکبیر</h3>
+                <p>کلیه حقوق این وب‌سایت، شامل محتوای متنی، تصاویر، لوگو، طراحی و هر گونه اطلاعات موجود در آن، برای خبرگزاری امیرکبیر محفوظ است. هرگونه استفاده غیرمجاز از مطالب، شامل کپی‌برداری، بازنشر، تغییر، یا توزیع محتوا بدون اخذ اجازه کتبی از مدیریت خبرگزاری، تخلف محسوب شده و ممکن است پیگرد قانونی به همراه داشته باشد.</p>
+                <p>خبرگزاری امیرکبیر خود را متعهد به رعایت حقوق مالکیت معنوی و حمایت از تولیدکنندگان محتوا می‌داند و انتظار دارد کاربران نیز با رعایت اصول اخلاقی و حقوقی، از مطالب این وب‌سایت به شکل صحیح و قانونی استفاده نمایند.</p>
+                <p>در صورتی که تمایل به استفاده از محتوای این وب‌سایت در پروژه‌های تحقیقاتی، رسانه‌ای، یا سایر مقاصد دارید، لطفاً از طریق راه‌های ارتباطی مشخص‌شده با ما تماس بگیرید تا شرایط استفاده مورد بررسی قرار گیرد.</p>
+                <p>هرگونه نقض این قوانین و مقررات موجب محدودیت دسترسی کاربران به خدمات و محتوای سایت شده و می‌تواند منجر به اقدامات قانونی در راستای حفظ حقوق این خبرگزاری گردد. خبرگزاری امیرکبیر به عنوان یک مرجع اطلاع‌رسانی مستقل، ارزش ویژه‌ای برای شفافیت، اعتبار و اصالت محتوای خود قائل است و از تمامی کاربران تقاضا دارد که در استفاده از محتوا، اصول حرفه‌ای را رعایت نمایند.</p>
+                <p>تمامی حقوق محفوظ است. © 1403</p>
             </section>
         </main>
         <div id="footer"></div>
     </div>
 
-    <script src="js/script.js"></script>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script>
-        const scriptPath = document.currentScript.src;
-        const scriptDir = scriptPath.substring(0, scriptPath.lastIndexOf('/'));
+        <script src="js/script.js"></script>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script>
+            const scriptPath = document.currentScript.src;
+            const scriptDir = scriptPath.substring(0, scriptPath.lastIndexOf('/'));
+        
+            const relativeHeaderPath = "../assets/html/header.html";
+            const relativeFooterPath = "../assets/html/footer.html";
+        
+            const headerPath = `${scriptDir}/${relativeHeaderPath}`;
+            const footerPath = `${scriptDir}/${relativeFooterPath}`;
+        
+            $("#footer").load(footerPath);
+            $("#header").load(headerPath);
+        </script>
+        <script>
+            let slideIndex = 1;
+            showSlides(slideIndex);
     
-        const relativeHeaderPath = "../assets/html/header.html";
-        const relativeFooterPath = "../assets/html/footer.html";
+            function plusSlides(n) {
+                showSlides(slideIndex += n);
+            }
     
-        const headerPath = `${scriptDir}/${relativeHeaderPath}`;
-        const footerPath = `${scriptDir}/${relativeFooterPath}`;
+            function currentSlide(n) {
+                showSlides(slideIndex = n);
+            }
     
-        $("#footer").load(footerPath);
-        $("#header").load(headerPath);
-    </script>
+            function showSlides(n) {
+                let i;
+                let slides = document.getElementsByClassName("mySlides");
+                let dots = document.getElementsByClassName("dot");
+                if (n > slides.length) {slideIndex = 1}    
+                if (n < 1) {slideIndex = slides.length}
+                for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";  
+                }
+                for (i = 0; i < dots.length; i++) {
+                    dots[i].className = dots[i].className.replace(" active", "");
+                }
+                slides[slideIndex-1].style.display = "block";  
+                dots[slideIndex-1].className += " active";
+            }
+        </script>
+</body>
 </html>
