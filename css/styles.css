@@ -22,6 +22,7 @@ body {
 }
 
 header {
+    box-sizing: content-box;
     background-color: #00264d;
     color: white;
     padding: 20px;
@@ -35,11 +36,37 @@ header {
     height: 130px;
 }
 
-header .logo h1 {
+.header-section {
+    display: flex;
+    justify-content: space-between;
+}
+
+header .header-icon {
+    display: flex;
+    flex: 1;
+    text-align: center;
+    justify-content: flex-end;
+    gap: 20px;
+    color: white;
+    padding-top: 20px;
+    padding-left: 20px;
+}
+
+header .header-icon a {
+    color: white;
+}
+
+header .header-icon a:hover {
+    color: #ffcc00;
+    transition: all 0.3s ease;
+}
+
+header .header-logo h1 {
     font-size: 3em;
     margin: 0;
     font-family: IranNastaliqfont, serif;
     text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.4);
+    padding-right: 20px;
 }
 
 nav ul {
