@@ -368,32 +368,11 @@ p {
 
 .about-section img {
     border-radius: 5px;
-    max-width: 400px;
+    max-width: 500px;
     display: block;
     margin: 0 auto;
 }
 
-.arrow {
-    position: absolute;
-    top: 50%;
-    font-size: 2em;
-    background: none;
-    border: none;
-    cursor: pointer;
-    color: #333;
-    transform: translateY(-50%);
-    transition: color 0.3s;
-    z-index: 1;
-}
-
-.arrow:hover {
-    color: #000;
-}
-
-.arrow:disabled {
-    color: #ccc;
-    cursor: not-allowed;
-}
 
 .left {
     left: 10px;
@@ -407,11 +386,12 @@ p {
     cursor: pointer;
     position: absolute;
     top: 50%;
-    font-size: 50px;
-    color: white;
-    padding: 0 20px;
+    font-size: 25px;
+    color: black;
+    padding: 15px;
     transform: translateY(-50%);
     user-select: none;
+    border-radius: 5px
 }
 
 .prev {
@@ -437,19 +417,6 @@ p {
     transform: translateY(0.5em);
 }
 
-.btn svg {
-    transition: transform 0.5s;
-}
-
-.btn:hover svg {
-    transform: scale(0.9);
-    fill: #333333;
-}
-
-.btn img {
-    max-width: 50px;
-}
-
 .social-icons {
     position: relative;
 }
@@ -457,8 +424,8 @@ p {
 .icon-label {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     position: absolute;
-    bottom: 65%;
-    left: 50%;
+    bottom: 70%;
+    left: 40%;
     transform: translate(-50%, 10px);
     background-color: rgba(0, 0, 0, 0.8);
     color: white;
