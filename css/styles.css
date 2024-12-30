@@ -3,6 +3,11 @@
     src: url(../assets/fonts/IranNastaliq.ttf);
 }
 
+@font-face {
+    font-family: Shabnam;
+    src: url(../assets/fonts/Shabnam.ttf);
+}
+
 body {
     font-family: 'Vazir', sans-serif;
     background-color: #f3f4f6;
@@ -25,7 +30,7 @@ header {
     box-sizing: content-box;
     background-color: #00264d;
     color: white;
-    padding: 20px;
+    padding: 0 0px 20px 0px;
     text-align: center;
     border-radius: 0 0 20px 20px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -33,30 +38,92 @@ header {
     width: 100%;
     max-width: 1100px;
     margin: 0 auto;
-    height: 130px;
+    height: 200px;
 }
 
-.header-section {
+header .masthead {
+    background-color: #00162d;
+    width: 100%;
+    height: 40px;
+    margin: 0 0 30px;
     display: flex;
     justify-content: space-between;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #ffcc00;
+    border-radius: 0 0 20px 20px;
+    align-items: center;
 }
 
-header .header-icon {
-    display: flex;
-    flex: 1;
-    text-align: center;
-    justify-content: flex-end;
+header .masthead > div:first-child {
+    margin-left: auto;
+}
+
+header .masthead > div:last-child {
+    margin-right: auto;
+}
+
+header .masthead .timeanddate p {
+    font-family: "Shabnam", serif;
+}
+
+header .masthead .timeanddate {
+    display: inline-flex;
+    padding-right: 10px;
+    margin: 0;
+}
+
+header .masthead .timeanddate p {
+    margin: 5px 0;
+}
+
+header .masthead .icons {
+    display: inline-flex;
     gap: 20px;
     color: white;
-    padding-top: 20px;
-    padding-left: 20px;
+    padding-left: 10px;
 }
 
-header .header-icon a {
+header .masthead .masthead-search input {
+    width: 300px;
+    padding: 8px 12px;
+    border: 2px solid #00162d;
+    border-radius: 8px;
+    font-family: 'Vazir', sans-serif;
+    font-size: 1em;
+    transition: all 0.3s ease;
+    height: 35px;
+    background-color: #f0f0f0;
+    color: #00162d;
+}
+
+header .masthead .masthead-search input:focus {
+    border-color: #ffcc00;
+    box-shadow: 0 0 8px rgba(255, 204, 0, 0.7);
+    outline: none;
+    background-color: #ffffff;
+}
+
+header .masthead .masthead-search button {
+    padding: 0 8px;
+    background-color: #00162d;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-size: 20px;
+}
+
+header .masthead .masthead-search button:hover {
+    color: #ffcc00;
+}
+
+header .masthead a {
     color: white;
 }
 
-header .header-icon a:hover {
+header .masthead a:hover {
     color: #ffcc00;
     transition: all 0.3s ease;
 }
@@ -66,7 +133,22 @@ header .header-logo h1 {
     margin: 0;
     font-family: IranNastaliqfont, serif;
     text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.4);
-    padding-right: 20px;
+    line-height: 1.8;
+}
+
+header .header-logo {
+    padding: 8px 0 0 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+header .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    max-height: 150px;
 }
 
 nav ul {
@@ -400,7 +482,6 @@ p {
     margin: 0 auto;
 }
 
-
 .left {
     left: 10px;
 }
@@ -418,7 +499,7 @@ p {
     padding: 15px;
     transform: translateY(-50%);
     user-select: none;
-    border-radius: 5px
+    border-radius: 5px;
 }
 
 .prev {
@@ -504,6 +585,36 @@ p {
     color: #004080;
     display: inline-block; /* اضافه کردن این خط برای جلوگیری از انباشته شدن */
 }
+
 .read-more a:hover {
     text-decoration: underline;
+}
+
+#loading-screen {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: white;
+    z-index: 9999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.spinner {
+    border: 16px solid #f3f3f3;
+    border-top: 16px solid #3498db;
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
 }
