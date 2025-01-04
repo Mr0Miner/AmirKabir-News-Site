@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>صفحه اصلی - خبرگزاری امیر کبیر</title>
+    <meta name="description" content="صفحه اصلی خبرگزاری ایران با آخرین اخبار و تحلیل‌ها.">
+    <link rel="shortcut icon" href="https://raw.githubusercontent.com/Mr0Miner/AmirKabir-News-Site/refs/heads/main/assets/image/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="../../css/styles.css">
+    <script src="libraries.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="alternate" type="application/rss+xml" title="Amir Kabir News RSS" href="rss.xml" />
+</head>
+<body>
+    <div id="loading-screen">
+        <div class="spinner"></div>
+    </div>
+    <div class="container">
+
+        <div id="header"></div>
+
+        <div id="footer"></div>
+    </div>
+
+    <script src="../../js/script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $("#footer").load("footer.html");
+        $("#header").load("header.html");
+    </script>
+
+</body>
+</html>

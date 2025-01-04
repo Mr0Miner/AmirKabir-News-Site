@@ -1,25 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <rss version="2.0">
   <channel>
-    <title>Amir Kabir News</title> <!-- عنوان سایت یا اخبار -->
-    <link>http://www.example.com</link> <!-- لینک به صفحه اصلی سایت -->
-    <description>آخرین اخبار سایت</description> <!-- توضیحی کوتاه در مورد محتوا -->
-    <language>fa-ir</language> <!-- زبان محتوا -->
-    <lastBuildDate>Mon, 25 Dec 2024 10:00:00 GMT</lastBuildDate> <!-- تاریخ آخرین به‌روزرسانی -->
-
-    <!-- هر خبر یا پست -->
-    <item>
-      <title>خبر اول</title>
-      <link>http://www.example.com/news1</link>
-      <description>توضیح کوتاه درباره خبر اول</description>
-      <pubDate>Mon, 25 Dec 2024 09:00:00 GMT</pubDate> <!-- تاریخ انتشار خبر -->
-    </item>
-
-    <item>
-      <title>خبر دوم</title>
-      <link>http://www.example.com/news2</link>
-      <description>توضیح کوتاه درباره خبر دوم</description>
-      <pubDate>Mon, 25 Dec 2024 08:30:00 GMT</pubDate>
-    </item>
+    <title>AmirKabir News</title>
+    <link>https://mr0miner.github.io/AmirKabir-News-Site/</link>
+    <description>معرفی سایت امیرکبیر</description>
+    <language>fa-ir</language>
+    <lastBuildDate>Sat, 4 Jan 2025 16:50:30 GMT</lastBuildDate>
   </channel>
 </rss>
