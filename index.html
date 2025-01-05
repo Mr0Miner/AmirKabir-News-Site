@@ -6,8 +6,8 @@
     <title>صفحه اصلی - خبرگزاری امیر کبیر</title>
     <meta name="description" content="صفحه اصلی خبرگزاری ایران با آخرین اخبار و تحلیل‌ها.">
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/loading-bar.css">
     <link rel="shortcut icon" href="https://raw.githubusercontent.com/Mr0Miner/AmirKabir-News-Site/refs/heads/main/assets/image/favicon.png" type="image/x-icon">
-    <script src="libraries.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="alternate" type="application/rss+xml" title="Amir Kabir News RSS" href="https://raw.githubusercontent.com/Mr0Miner/AmirKabir-News-Site/refs/heads/main/assets/rss/rss.xml" />
     <style>
@@ -30,9 +30,20 @@
     </style>
 </head>
 <body>
+    
     <div id="loading-screen">
-        <div class="spinner"></div>
+        <!--<div id="loading-bar" class="ldBar label-center" data-preset="fan"></div>-->
+        <div
+            id="loading-bar"
+            class="ldBar label-center"
+            data-type="fill"
+            data-fill-dir="btt"
+            data-img="assets/image/favicon.svg"
+            data-precision="0.01"
+        >
+        </div>
     </div>
+
     <div class="container">
 
         <div id="header"></div>
@@ -105,8 +116,29 @@
 
         <div id="footer"></div>
     </div>
+     
+    <script>
+        // وقتی که صفحه شروع به بارگذاری می‌کند
+        document.addEventListener("DOMContentLoaded", () => {
+          const loadingBar = new ldBar("#loading-bar");
+          let progress = 0;
+      
+          // شبیه‌سازی لودینگ
+          const interval = setInterval(() => {
+            progress += 5; // افزایش درصد
+            loadingBar.set(progress);
+      
+            if (progress >= 100) {
+              clearInterval(interval); // توقف وقتی به 100% برسد
+              document.getElementById("loading-bar").style.display = "none"; // مخفی کردن لودینگ بار
+            }
+          }, 100); // هر 100 میلی‌ثانیه 5% افزایش
+        });
+    </script>
+      
 
     <script src="js/script.js"></script>
+    <script src="js/loading-bar.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script>
         $("#footer").load("https://raw.githubusercontent.com/Mr0Miner/News-Site-AmirKabir/refs/heads/main/assets/html/footer.html");

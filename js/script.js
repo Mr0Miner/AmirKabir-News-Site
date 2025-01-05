@@ -23,9 +23,11 @@ document.addEventListener('DOMContentLoaded', function() {
 
     window.addEventListener('load', function() {
         const loadingScreen = document.getElementById('loading-screen');
-        loadingScreen.style.display = 'none';
+        loadingScreen.classList.add('hidden');
+        setTimeout(() => {
+            loadingScreen.style.display = 'none'; //
+        }, 500);
     });
-
     // افزودن کتابخانه‌ها به صورت داینامیک
     function loadLibrary(src, callback) {
         const script = document.createElement('script');
@@ -38,7 +40,6 @@ document.addEventListener('DOMContentLoaded', function() {
     loadLibrary("https://cdn.jsdelivr.net/npm/moment@2.29.4/moment.min.js", () => {
         loadLibrary("https://cdn.jsdelivr.net/npm/moment-jalaali@0.9.2/build/moment-jalaali.js", () => {
             // تنظیم تاریخ پس از بارگذاری کتابخانه‌ها
-            // تنظیم تاریخ فعلی با استفاده از Jalali Moment
             moment.loadPersian({usePersianDigits: true});
             const date = moment().format("dddd jD jMMMM jYYYY");
             document.getElementById("date").textContent = date;
