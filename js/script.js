@@ -21,13 +21,6 @@ document.addEventListener('DOMContentLoaded', function() {
 
     fetchQuotes(); // فراخوانی تابع برای بارگذاری احادیث
 
-    window.addEventListener('load', function() {
-        const loadingScreen = document.getElementById('loading-screen');
-        loadingScreen.classList.add('hidden');
-        setTimeout(() => {
-            loadingScreen.style.display = 'none'; //
-        }, 500);
-    });
     // افزودن کتابخانه‌ها به صورت داینامیک
     function loadLibrary(src, callback) {
         const script = document.createElement('script');

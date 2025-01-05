@@ -39,7 +39,7 @@
             data-type="fill"
             data-fill-dir="btt"
             data-img="assets/image/favicon.svg"
-            data-precision="0.01"
+            data-precision="0.1"
         >
         </div>
     </div>
@@ -130,12 +130,11 @@
       
             if (progress >= 100) {
               clearInterval(interval); // توقف وقتی به 100% برسد
-              document.getElementById("loading-bar").style.display = "none"; // مخفی کردن لودینگ بار
+              document.getElementById("loading-screen").style.display = "none"; // مخفی کردن لودینگ بار
             }
           }, 100); // هر 100 میلی‌ثانیه 5% افزایش
         });
     </script>
-      
 
     <script src="js/script.js"></script>
     <script src="js/loading-bar.js"></script>
