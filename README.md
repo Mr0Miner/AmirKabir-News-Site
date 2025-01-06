@@ -4,11 +4,11 @@
 
 ## ساختار پروژه
 
-- `css/`: شامل فایل‌های CSS برای استایل‌دهی به وب‌سایت.
-- `js/`: شامل فایل‌های JavaScript برای عملکردهای دینامیک وب‌سایت.
-- `assets/`: شامل تصاویر، فونت‌ها و سایر منابع.
-- `about-us.html`: صفحه درباره ما.
-- `news/`: شامل صفحات اخبار و مقالات.
+- [`css/`](https://github.com/Mr0Miner/AmirKabir-News-Site/tree/main/css): شامل فایل‌های CSS برای استایل‌دهی به وب‌سایت.
+- [`js/`](https://github.com/Mr0Miner/AmirKabir-News-Site/tree/main/js): شامل فایل‌های JavaScript برای عملکردهای دینامیک وب‌سایت.
+- [`assets/`](https://github.com/Mr0Miner/AmirKabir-News-Site/tree/main/assets): شامل تصاویر، فونت‌ها و سایر منابع.
+- [`about-us.html`](https://github.com/Mr0Miner/AmirKabir-News-Site/blob/main/about-us.html): صفحه درباره ما.
+- [`news/`](https://github.com/Mr0Miner/AmirKabir-News-Site/tree/main/news): شامل صفحات اخبار و مقالات.
 
 ## استفاده
 
@@ -24,7 +24,29 @@
 
 این پروژه تحت مجوز MIT منتشر شده است. برای اطلاعات بیشتر به فایل LICENSE مراجعه کنید.
 
-## تماس
+---
 
-برای هرگونه سوال یا پیشنهاد، می‌توانید با ما تماس بگیرید:
-- ایمیل: example@example.com
+# Amir Kabir News Agency Project
+
+This project is a news website that provides news and information in the fields of education, culture, and science. The goal of this website is to deliver up-to-date and accurate news to users.
+
+## Project Structure
+- [`css/`](https://github.com/Mr0Miner/AmirKabir-News-Site/tree/main/css): Contains CSS files for styling the website.
+- [`js/`](https://github.com/Mr0Miner/AmirKabir-News-Site/tree/main/js): Contains JavaScript files for the dynamic functionalities of the website.
+- [`assets/`](https://github.com/Mr0Miner/AmirKabir-News-Site/tree/main/assets): Contains images, fonts, and other resources.
+- [`about-us.html`](https://github.com/Mr0Miner/AmirKabir-News-Site/blob/main/about-us.html): About us page.
+- [`news/`](https://github.com/Mr0Miner/AmirKabir-News-Site/tree/main/news): Contains news articles and pages.
+
+## Usage
+
+- To view news, go to the homepage.
+- To learn more about the team, visit the "About Us" page.
+- You can use the search feature to find specific news articles.
+
+## Contribution
+
+If you wish to contribute to this project, please fork the repository and submit your changes as a Pull Request.
+
+## License
+
+This project is licensed under the MIT License. For more information, please refer to the LICENSE file.
